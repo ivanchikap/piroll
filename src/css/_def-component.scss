@@ -1,0 +1,14 @@
+.btn {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 12px;
+  padding: 18px 46px;
+  color: #fff;
+  font-family: 'Montserat', sans-serif;
+  font-weight: 500;
+  transition: all .3s ease-out;
+}
+.btn.btn--default {
+  background-color: #10c9c3;
+}

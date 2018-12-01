@@ -1,129 +1,23 @@
+/* ==== FLEX START ==== */
 @import "flex";
+/* ==== FLEX END ==== */
+
+/* ==== GRID START ==== */
 @import "grid";
+/* ==== GRID END ==== */
+
 /* ==== RESET START ==== */
-*{
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-body{
-    margin: 0;
-    color: #787878;
-    font: 400 16px/1.5 'Nunito Sans', sans-serif;;
-    background-color: #f4f6f8;
-    letter-spacing: 1.2px;
-}
-h1, h2, h3, h4, h5, h6, p{
-    margin: 0;
-}
-ul, ol{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-a{
-    color: #111;
-}
-a, a:hover{
-    text-decoration: none;
-}
-img{
-    max-width: 100%;
-}
-input, textarea, button{
-    outline: none;
-    border: none;
-}
-textarea{
-    resize: vertical;
-}
-button{
-    cursor: pointer;
-}
-label{
-    margin-bottom: 0;
-}
-select, select:hover{
-    color: inherit;
-    background: #fff;
-}
-option, option:hover{
-    color: inherit;
-    background: #fff;
-}
-::-webkit-input-placeholder {transition: all .3s linear;   color: rgba(255, 255, 255, .8);}
-::-moz-placeholder          {transition: all .3s linear;   color: rgba(255, 255, 255, .8);}
-:-moz-placeholder           {transition: all .3s linear;   color: rgba(255, 255, 255, .8);}
-:-ms-input-placeholder      {transition: all .3s linear;   color: rgba(255, 255, 255, .8);}
-:focus::-webkit-input-placeholder {color: transparent}
-:focus::-moz-placeholder          {color: transparent}
-:focus:-moz-placeholder           {color: transparent}
-:focus:-ms-input-placeholder      {color: transparent}
+@import "reset";
 /* ==== RESET END ==== */
 
 /* ==== DEFAULT CLASSES START ==== */
-.ml-auto {
-    margin-left: auto;
-}
-
+@import "def-classes";
 /* ==== DEFAULT CLASSES END ==== */
 
 /* ==== DEFAULT COMPONENTS START ==== */
-.btn {
-    display: inline-block;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 12px;
-    padding: 18px 46px;
-    color: #fff;
-    font-family: 'Montserat', sans-serif;
-    font-weight: 500;
-    transition: all .3s ease-out;
-}
-.btn.btn--default {
-    background-color: #10c9c3;
-}
-
+@import "def-component";
 /* ==== DEFAULT COMPONENTS END ==== */
 
 /* ==== CUSTOM STYLES START  ==== */
-
-/* header start */
-.header {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 99;
-    padding-top: 38px;
-}
-.header__nav a {
-    font: 600 12px/2 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #191919;
-    line-height: 32px;
-}
-.header__nav a:hover {
-    color: #10c9c3;
-}
-.header__nav a + a {
-    margin-left: 30px;
-}
-/* header end */
-
-/* first-screen start */
-.first-screen {
-    height: 100vh;
-    background-color: #e9e9e9;
-    padding: 65px 0;
-}
-.first-screen h1 {
-    color: #1d1d1d;
-    font: 600 38px 'Montserrat', sans-serif;
-}
-.first-screen p {
-    margin: 32px 0 39px 0;
-    font-size: 18px;
-}
-/* first-screen end */
-
+@import "custom-styles";
 /* ==== CUSTOM STYLES END ==== */
