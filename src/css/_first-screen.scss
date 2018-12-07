@@ -1,0 +1,15 @@
+.first-screen {
+  height: 100vh;
+  background-color: #e9e9e9;
+  padding: 65px 0;
+
+  & h1 {
+    color: #1d1d1d;
+    font: 600 38px 'Montserrat', sans-serif;
+  }
+  & p {
+    margin: 32px 0 39px 0;
+    font-size: 18px;
+  }
+
+}
