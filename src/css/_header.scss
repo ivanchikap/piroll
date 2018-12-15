@@ -6,17 +6,52 @@
   z-index: 99;
   padding-top: 38px;
 
-  &__nav a {
-    font: 600 12px/2 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #191919;
-    line-height: 32px;
+  &__btn {
+    display: none;
+    width: 31px;
+    height: 25px;
+
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+  
+  &__btn-bar {
+    height: 2px;
+    background-color: #191919;
+    border-radius: 1px;
   }
 
-  &__nav a:hover {
-    color: #10c9c3;
-  }
-  &__nav a + a {
-    margin-left: 30px;
+  &__nav  {
+
+    @include tablet {
+      display: none;
+    }
+
+    &--active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 75px;
+      right: 0;
+    }
+
+    & a {
+      font: 600 12px/2 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      color: #191919;
+      line-height: 32px;
+
+      &:hover {
+        color: #10c9c3;
+      }
+
+      & + & {
+        margin-left: 30px;
+      }
+    }
   }
 }

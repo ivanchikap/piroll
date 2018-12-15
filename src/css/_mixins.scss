@@ -16,12 +16,6 @@
     }
 }
 
-@mixin min-laptop {
-    @media screen and (min-width: 961px) {
-        @content;
-    }
-}
-
 @mixin tablet {
     @media screen and (max-width: $tablet) {
         @content;
