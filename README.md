@@ -1,29 +1,23 @@
-#This readme is not from this project. Just was copied.
-# My landing page
-It's an educational project!!!
+# [Piroll](https://ivanchikap.github.io/piroll/) landing page
+
 ---------------------
-This project is created for an educational goal. That is why, I used float technology and don't use html5 tags and BEM technology.
+
 ***
-You can estimate my [landing-page](https://ivanchikap.github.io/land-page/).
+Psd layout was download from a free web resource.
 
-# Web-site is about...
-Thomas Rhythm web studio [![N](img/logo.png)](https://ivanchikap.github.io/land-page/)
+Web-site is about...
 ---------------------
+New design studio based in USA [![N](src/img/logo.png)](https://ivanchikap.github.io/land-page/)
 
-The web-page is consist of adaptive sections:
-* first screen with adaptive menu
-* about studio with interesting members cards animation
-* services with tabs
-* looking for exclusive digital services
-* portfolio section with tabs and good-looking hover effect
-* like our creative works
-* why choose us
-* what people say with slider
-* latest news
-* newsletter
-* contact
-* map
-* footer
+
+The web-site is done by using next technology
+----------------------
+* BEM with some modifications
+* gulp
+* scss
+* jquery and some plugins 
+* bootstrap 4 grid  and flexbox
+
 
 # About project
 How to install  
@@ -39,13 +33,11 @@ What's in ...
 **css**             | Folder with css files 
 style.css           | Main CSS file will all styles
 owl.carousel.min.css| Carousel styles 
-et-line.css         | Icons styles
-**fonts**           | Fonts folder, there are two fonts with different styles and icons font 
+et-line.css         | Icons styles 
 **img**             | Images folder
-**js**              | JavaScripts folder
-google-maps.js      | JS script which configure maps settings 
+**js**              | JavaScripts folder    
 init.js             | There is initialisation and hamburger 
 owl.carousel.min.js | Carousel js script
 .gitignore          | File describe, what are git should to ignore
-index.html          | There is all html layout
+index.html          | There is main html file
 
