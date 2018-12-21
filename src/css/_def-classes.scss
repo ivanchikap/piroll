@@ -1,3 +1,45 @@
 .ml-auto {
   margin-left: auto;
 }
+
+@media (max-width: $laptop) {
+  .m-lg-right {
+    margin-right: auto;
+  }
+  .m-lg-left {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: $tablet) {
+  .m-md-right {
+    margin-right: auto;
+  }
+  .m-md-left {
+    margin-left: auto;
+  }
+  .m-md-0 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $mobile-large) {
+  .m-sm-right {
+    margin-right: auto;
+  }
+  .m-sm-left {
+    margin-left: auto;
+  }
+  .m-sm-0 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: $mobile) {
+  .m-xs-right {
+    margin-right: auto;
+  }
+  .m-xs-left {
+    margin-left: auto;
+  }
+}
