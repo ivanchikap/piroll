@@ -1,45 +1,118 @@
+.default-section {
+  padding: 100px 0;
+}
+.w-100 {
+  width: 100% !important;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.m-auto {
+  margin: 0 auto;
+}
 .ml-auto {
   margin-left: auto;
 }
+.mr-auto {
+  margin-right: auto;
+}
 
-@media (max-width: $laptop) {
-  .m-lg-right {
+@include laptop {
+  .w-lg-100 {
+    width: 100% !important;
+  }
+  .text-lg-center {
+    text-align: center;
+  }
+  .text-lg-right {
+    text-align: right;
+  }
+  .text-lg-left {
+    text-align: left;
+  }
+  .m-lg-auto {
+    margin: 0 auto;
+  }
+  .ml-lg-auto {
+    margin-left: auto;
+  }
+  .mr-lg-auto {
     margin-right: auto;
   }
-  .m-lg-left {
+}
+@include tablet {
+  .w-md-100 {
+    width: 100% !important;
+  }
+  .text-md-center {
+    text-align: center;
+  }
+  .text-md-right {
+    text-align: right;
+  }
+  .text-md-left {
+    text-align: left;
+  }
+  .m-md-auto {
+    margin: 0 auto;
+  }
+  .ml-md-auto {
     margin-left: auto;
+  }
+  .mr-md-auto {
+    margin-right: auto;
+  }
+}
+@include mobile-large {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+  .text-sm-center {
+    text-align: center;
+  }
+  .text-sm-right {
+    text-align: right;
+  }
+  .text-sm-left {
+    text-align: left;
+  }
+  .m-sm-auto {
+    margin: 0 auto;
+  }
+  .ml-sm-auto {
+    margin-left: auto;
+  }
+  .mr-sm-auto {
+    margin-right: auto;
+  }
+}
+@include mobile {
+  .w-xs-100 {
+    width: 100% !important;
+  }
+  .text-xs-center {
+    text-align: center;
+  }
+  .text-xs-right {
+    text-align: right;
+  }
+  .text-xs-left {
+    text-align: left;
+  }
+  .m-xs-auto {
+    margin: 0 auto;
+  }
+  .ml-xs-auto {
+    margin-left: auto;
+  }
+  .mr-xs-auto {
+    margin-right: auto;
   }
 }
 
-@media (max-width: $tablet) {
-  .m-md-right {
-    margin-right: auto;
-  }
-  .m-md-left {
-    margin-left: auto;
-  }
-  .m-md-0 {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: $mobile-large) {
-  .m-sm-right {
-    margin-right: auto;
-  }
-  .m-sm-left {
-    margin-left: auto;
-  }
-  .m-sm-0 {
-    margin-left: 0;
-  }
-}
-
-@media (max-width: $mobile) {
-  .m-xs-right {
-    margin-right: auto;
-  }
-  .m-xs-left {
-    margin-left: auto;
-  }
-}

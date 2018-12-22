@@ -32,15 +32,24 @@
 
     &--active {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       position: absolute;
-      top: 75px;
-      left: 50px;
+      top: 65px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @include mobile-large {
+        flex-wrap: wrap;
+        width: 70%;
+      }
+      @include mobile {
+        width: 90%;
+      }
     }
 
     & a {
-      font: 600 12px/2 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 12px;
       text-transform: uppercase;
       color: #191919;
       line-height: 32px;
@@ -48,9 +57,15 @@
       &:hover {
         color: #10c9c3;
       }
-
-      & + & {
+      & + a {
         margin-left: 30px;
+
+        @include tablet {
+          margin-left: 20px;
+        }
+        @include mobile {
+          margin-left: 10px;
+        }
       }
     }
   }

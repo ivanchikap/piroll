@@ -15,5 +15,8 @@
     "gulp-sass": "^4.0.2",
     "gulp.spritesmith": "^6.9.0",
     "node-sass": "^4.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.2.1"
   }
 }
