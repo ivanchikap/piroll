@@ -1,0 +1,43 @@
+.numbers {
+  height: 240px;
+  background-color: #10c9c3;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+
+  @include mobile {
+    height: auto;
+  }
+
+  &__item {
+    overflow: hidden;
+    min-width: 187px;
+  }
+
+  &__item-icon {
+    font-size: 36px;
+    margin-right: 28px;
+
+    @include mobile-large {
+      font-size: 30px;
+      margin-right: 18px;
+    }
+  }
+  &__item-info span {
+    font-size: 18px;
+    margin-bottom: 16px;
+
+    @include mobile-large {
+      font-size: 14px;
+      margin-bottom: 12px;
+    }
+  }
+  &__item-info p {
+    font-size: 12px;
+    white-space: nowrap;
+
+    @include mobile-large {
+      font-size: 10px;
+    }
+  }
+}
