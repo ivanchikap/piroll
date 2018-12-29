@@ -1,0 +1,72 @@
+.work-process {
+  background-color: #fff;
+  
+  &__player {
+    background-color: #e9e9e9;
+    position: relative;
+    height: 571px;
+    margin-top: 14px;
+
+    @include laptop {
+      height: 476px;
+    }
+    @include tablet {
+      height: 380px;
+    }
+    @include mobile-large {
+      height: 286px;
+    }
+    @include mobile {
+      height: 200px;
+    }
+  }
+  &__player-button {
+    width: 85px;
+    height: 85px;
+    background-color: #10c9c3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: opacity .3s ease-in-out;
+    &:hover {
+      opacity: .6;
+    }
+
+    @include laptop {
+      width: 76px;
+      height: 76px;
+    }
+    @include tablet {
+      width: 70px;
+      height: 70px;
+    }
+    @include mobile-large {
+      width: 66px;
+      height: 66px;
+    }
+    @include mobile {
+      width: 56px;
+      height: 56px;
+    }
+  }
+  &__player-button-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    width: 0;
+    height: 17px;
+    border-color: transparent transparent transparent #fff;
+    transition: 100ms all ease;
+    border-style: solid;
+    border-width: 8px 0 8px 11px;
+
+    &.paused {
+      border-style: double;
+      border-width: 0 0 0 11px;
+    }
+  }
+}

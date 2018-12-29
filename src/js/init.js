@@ -16,6 +16,15 @@ $(function() {
      }());
 
 
+    let btn = $(".work-process__player-button");
+    let btnInner = $(".work-process__player-button-inner");
+    btn.click(function() {
+        btnInner.toggleClass("paused");
+        return false;
+    });
+
+
+
     // $('.owl-carousel').owlCarousel({
     //     loop:true,
     //     dots: true,

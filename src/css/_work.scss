@@ -1,16 +1,47 @@
 .work {
+  $root: &;
   background-color: #ddd;
 
-  a:hover {
+  &__link {
     display: block;
-    min-height: 200px;
-    min-width: 100%;
-    background: #252525 url("../img/eye.png") no-repeat center center;
-    z-index: 10;
+    height: 100%;
+    transition: all .3s ease-in-out;
+    &:hover {
+      background: #252525 url("../img/eye.png") no-repeat center center;
+      & #{$root}__img {
+        opacity: 0;
+      }
+    }
   }
+
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  & .col-12 {
+    background-color: #f5f5f5;
+  }
+  &__load {
+    display: block;
+    color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 46px;
+
+    @include laptop {
+      padding: 38px;
+    }
+    @include tablet {
+      padding: 30px;
+    }
+    @include mobile-large {
+      padding: 23px;
+    }
+    @include mobile {
+      padding: 16px;
+    }
   }
 }
