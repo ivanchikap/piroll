@@ -24,6 +24,13 @@ $(function() {
     });
 
 
+    $(".owl-carousel").owlCarousel({
+        dots: true,
+        items: 1
+    });
+
+
+
 
     // $('.owl-carousel').owlCarousel({
     //     loop:true,

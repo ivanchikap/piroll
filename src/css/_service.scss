@@ -1,12 +1,34 @@
 .service {
-  padding: 15px 0;
-  &__item-img {
+  padding: 70px 0;
 
+  @include mobile-large {
+    padding: 50px 0;
+  }
+  @include mobile {
+    padding: 30px 0;
+  }
+  &__item {
+    padding: 30px 0;
+
+    @include mobile-large {
+      padding: 20px 0;
+    }
+    @include mobile {
+      padding: 15px 0;
+    }
   }
   &__item-title {
+    color: #191919;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 18px;
+    margin-bottom: 8px;
 
   }
   &__item-text {
-
+    color: #787878;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
