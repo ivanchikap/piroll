@@ -1,6 +1,7 @@
 .testimonials {
   height: 500px;
   background-color: #10c9c3;
+  position: relative;
 
   @include tablet {
     height: 440px;
@@ -13,13 +14,36 @@
   }
 
   &__carousel {
-    padding-top: 178px;
+    padding: 178px 0;
+
+    @include tablet {
+      padding: 120px 0;
+    }
+    @include mobile-large {
+      padding: 100px 0;
+    }
+    @include mobile {
+      padding: 60px 0;
+    }
 
     & .owl-dots {
       display: flex;
       justify-content: center;
-      margin-top: 108px;
       align-items: center;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 60px;
+
+      @include tablet {
+        bottom: 50px;
+      }
+      @include mobile-large {
+        bottom: 30px;
+      }
+      @include mobile {
+        bottom: 20px;
+      }
     }
   }
 
@@ -32,7 +56,16 @@
     line-height: 36px;
     margin-bottom: 22px;
     @include tablet {
-      //font-size: 20px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    @include mobile-large {
+      line-height: 24px;
+    }
+    @include mobile {
+      margin-bottom: 18px;
+      font-size: 18px;
+      line-height: 1.2;
     }
   }
 
