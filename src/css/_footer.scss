@@ -1,0 +1,15 @@
+.footer {
+  background-color: #141414;
+  color: #bcbcbc;
+  font-size: 15px;
+  line-height: 24px;
+  min-height: 284px;
+
+  &__title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 22px;
+    line-height: 1.2;
+  }
+}

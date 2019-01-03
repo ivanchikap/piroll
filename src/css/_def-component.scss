@@ -5,11 +5,14 @@
   font-size: 12px;
   padding: 18px 46px;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
   transition: all .3s ease-out;
 }
 .btn.btn--default {
   background-color: #10c9c3;
+  &:hover {
+    box-shadow: 0 0 16px #10c9c3;
+  }
 }
 
 .title {
