@@ -4,7 +4,12 @@
   top: 0;
   left: 0;
   z-index: 99;
-  padding-top: 38px;
+  padding: 38px 0;
+
+
+  &--contact {
+    background-color: #fff;
+  }
 
   &__btn {
     display: none;
@@ -46,26 +51,27 @@
         width: 90%;
       }
     }
+  }
 
-    & a {
-      font-weight: 600;
-      font-size: 12px;
-      text-transform: uppercase;
-      color: #191919;
-      line-height: 32px;
+  &__nav-link {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #191919;
+    line-height: 32px;
 
-      &:hover {
-        color: #10c9c3;
+    &:hover,
+    &--active {
+      color: #10c9c3;
+    }
+    & + & {
+      margin-left: 30px;
+
+      @include tablet {
+        margin-left: 20px;
       }
-      & + a {
-        margin-left: 30px;
-
-        @include tablet {
-          margin-left: 20px;
-        }
-        @include mobile {
-          margin-left: 10px;
-        }
+      @include mobile {
+        margin-left: 10px;
       }
     }
   }

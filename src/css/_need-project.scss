@@ -1,4 +1,16 @@
 .need-project {
+
+  &__list-item {
+
+    & + & {
+      margin-top: 12px;
+    }
+  }
+
+  &__list-label {
+    color: #171717;
+    font-weight: 700;
+  }
   
   & .text {
     margin: 20px 0 36px;
