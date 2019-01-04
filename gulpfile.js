@@ -1,10 +1,10 @@
 'use strict'
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var browserSync = require('browser-sync');
-var spritesmith = require('gulp.spritesmith');
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+let autoprefixer = require('gulp-autoprefixer');
+let browserSync = require('browser-sync');
+let spritesmith = require('gulp.spritesmith');
 sass.compiler = require('node-sass');
 
 
@@ -40,7 +40,7 @@ gulp.task('img', function() {
 })
 
 gulp.task('sprite', function () {
-    var spriteData = gulp.src('src/sprite/*.png').pipe(spritesmith({
+    let spriteData = gulp.src('src/sprite/*.png').pipe(spritesmith({
         imgName: 'sprite.png',
         cssName: 'sprite.css',
         padding: 3
