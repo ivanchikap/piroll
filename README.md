@@ -16,10 +16,14 @@ The web-site is done by using next technology
 * gulp
 * scss
 * jquery and some plugins 
-* bootstrap 4 grid  and flexbox
+* bootstrap 4 grid and flexbox
 
 
 # About project
+What is in?
+---------------------
+2 pages is done: [index.html](https://ivanchikap.github.io/piroll/) and [contact.html](https://ivanchikap.github.io/piroll/contact.html)
+
 How to install  
 ---------------------
 To use this, you just should to download all folders and files to some hosting, server or your personal computer and open the index.html file in a browser. You should not something install or download additional.
