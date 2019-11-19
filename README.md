@@ -1,7 +1,7 @@
 # [Piroll](https://ivanchikap.github.io/piroll/) landing page
 
 ---------------------
-his site layout is adaptive for all type of devices with screen width more then 319px.<br>
+This site layout is adaptive for all type of devices with screen width more then 319px.<br>
 ***
 Psd layout was download from a free web resource.
 
